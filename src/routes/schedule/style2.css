@@ -1,0 +1,123 @@
+.flex-container {
+  display: flex;
+
+  justify-content: space-between;
+
+  margin-top: 30px;
+}
+
+.right {
+  background: #e5a022;
+
+  margin: 10px;
+
+  padding: 20px;
+
+  /* font-size: 30px; */
+
+  border-radius: 50px 0px 0px 50px;
+
+  width: 42%;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-self: right;
+}
+
+.left {
+  background: #e5a022;
+
+  margin: 10px;
+
+  padding: 20px;
+
+  /* font-size: 30px; */
+
+  border-radius: 0px 50px 50px 0px;
+
+  width: 42%;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-self: left;
+
+  font: normal normal medium 28px/34px Montserrat;
+}
+
+@media (max-width: 767px) {
+  .left {
+    width: 30%;
+  }
+
+  .right {
+    width: 55%;
+  }
+}
+
+.games {
+  width: 100%;
+
+  margin-top: 2em;
+
+  margin-bottom: 2em;
+}
+
+.schedule-day {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 0 0 1rem 0;
+    border-bottom: 1px solid white;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.base {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: space-around;
+}
+
+.schedule-event {
+    font-weight: bold;
+    text-align: center;
+    font-size: 4rem;
+    margin: 2rem 0 5rem 0;
+}
+
+#schedule-wrap{
+  display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#schedule-text{
+  text-align: center;
+	background: radial-gradient(
+		circle,
+		rgba(63, 94, 251, 1) 0%,
+		rgba(252, 70, 107, 1) 100%
+	);
+
+	background-size: 200%;
+
+	font-size: 4rem;
+	font-weight: bolder;
+	color: transparent;
+	background-clip: text;
+	animation: animation 1.7s linear infinite;
+}
+
+@keyframes animation {
+	to {
+		background-position: 200% center;
+	}
+}
